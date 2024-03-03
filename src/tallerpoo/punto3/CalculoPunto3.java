@@ -30,11 +30,10 @@ public class CalculoPunto3 {
         CalculoPunto3 y = new CalculoPunto3(2);
         for (int i = 0; i < y.x.length; i++) {
             for (int j = 0; j < y.x.length; j++) {
-                y.x[i][j] = (int) (Math.random() * 10); // Asignar valores aleatorios entre 0 y 9
+                y.x[i][j] = (int) (Math.random() * 10);
             }
         }
         double resultado = y.Calcular(y.x);
         System.out.println("El resultado de Calcular es: " + resultado);
-        
     }
 }

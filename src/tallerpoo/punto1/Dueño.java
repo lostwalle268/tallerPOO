@@ -3,8 +3,7 @@ package tallerpoo.punto1;
 import java.util.Scanner;
 
 public class Dueño {
-
-    public static void main(String[] args) {
+public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
         CuentaDeAhorro cuenta = new CuentaDeAhorro();
         boolean opcion = true;
@@ -35,5 +34,5 @@ public class Dueño {
                     break;
             }
         }
-    }
+    }    
 }
