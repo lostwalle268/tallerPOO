@@ -1,18 +1,12 @@
 package tallerpoo.punto4;
-
 import java.util.Scanner;
-
 public class CalculoPunto4 {
-
     public int[] x;
-
     public CalculoPunto4() {
     }
-
     public CalculoPunto4(int n) {
         x = new int[n+1];
     }
-
     public double CalcularY(int[] x) {
         for (int i = 1; i < x.length; i++) {
             x[i] = (int) (Math.random() * 10);

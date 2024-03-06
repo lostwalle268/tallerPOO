@@ -1,7 +1,5 @@
 package tallerpoo.punto1;
-
 import java.util.Scanner;
-
 public class Dueño {
 
     public static void main(String[] args) {
