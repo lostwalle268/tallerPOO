@@ -14,8 +14,8 @@ public class CalculoPunto4 {
         }
         System.out.println("----------------------------");
         double sum1 = 0;
-        for (int i = 0; i < x.length; i++) {
-            double sum3 = 0;
+        for (int i = 1; i < x.length; i++) {
+            double sum2 = 0;
             double prod2 = 1;
             for (int j = 1; j < x.length; j++) {
                 for (int k = 1; k < x.length; k++) {
@@ -26,9 +26,9 @@ public class CalculoPunto4 {
                     }
                     double den = factorial;
                     double resultado = num / den;
-                    sum3 += resultado;
+                    sum2 += resultado;
                 }
-                prod2 *= sum3;
+                prod2 *= sum2;
             }
             sum1 += prod2;
         }

@@ -1,8 +1,11 @@
 package tallerpoo.punto8;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Banco {
+    
     private List<Cliente> clientes;
 
     public Banco() {
@@ -23,15 +26,18 @@ public class Banco {
     }
 
     public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
         Banco banco = new Banco();
-
-        // Agregar clientes y productos (cuentas, CDT, etc.)
-         Cliente cliente1 = new Cliente("NombreCliente1");
-         banco.agregarCliente(cliente1);
-         cliente1.agregarProducto(new CuentaAhorros(1000, 0.6)); // Ejemplo de agregar cuenta de ahorros con saldo inicial de 1000 y 0.6% de interés mensual
-         cliente1.agregarProducto(new CDT(5000, 0.05, 12)); // Ejemplo de agregar CDT con inversión de 5000, 5% de interés anual y plazo de 12 meses
-
-        // Simular productos para cierta cantidad de meses
-         banco.simularProductos(6); // Simular por 6 meses
+        System.out.println("Cual es su nombre?");
+        Cliente cliente1 = new Cliente(read.next());
+        System.out.println("Hola " + cliente1.getNombre());
+        banco.agregarCliente(cliente1);
+        System.out.println("Cual es su saldo en su cuenta de ahorros?");
+        cliente1.agregarProducto(new CuentaAhorros(read.nextInt(), 0.6));
+        System.out.println("Cuanto desea saldo desea simular en su CDT");   
+        cliente1.agregarProducto(new CDT(read.nextDouble(), 0.05, 12)); 
+        banco.simularProductos(6);
+        String hola;
+       
     }
 }

@@ -6,6 +6,6 @@ public class CuentaCorriente extends Producto {
 
     @Override
     public double calcularInteres(int meses) {
-        return 0; // La cuenta corriente no genera intereses
+        return 0;
     }
 }
